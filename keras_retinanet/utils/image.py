@@ -70,6 +70,9 @@ def adjust_transform_for_image(transform, image, relative_translation):
     height, width, channels = image.shape
 
     result = transform
+    
+    #import pdb
+    #pdb.set_trace()
 
     # Scale the translation with the image size if specified.
     if relative_translation:

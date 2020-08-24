@@ -24,7 +24,7 @@ import time
 
 import cv2
 import progressbar
-assert(callable(progressbar.progressbar)), "Using wrong progressbar module, install 'progressbar2' instead."
+#assert(callable(progressbar.progressbar)), "Using wrong progressbar module, install 'progressbar2' instead."
 
 
 def _compute_ap(recall, precision):

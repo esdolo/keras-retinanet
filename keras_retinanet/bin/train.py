@@ -24,7 +24,7 @@ import warnings
 import keras
 import keras.preprocessing.image
 import tensorflow as tf
-
+sys.path.append('/home/qitai_wang/.local/lib/python3.5/site-packages')
 # Allow relative imports when being executed as script.
 if __name__ == "__main__" and __package__ is None:
     sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -460,6 +460,8 @@ def main(args=None):
     args = parse_args(args)
 
     # create object that stores backbone information
+    import pdb
+    pdb.set_trace()
     backbone = models.backbone(args.backbone)
 
     # make sure keras and tensorflow are the minimum required version
